@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="review.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="master.css">
+    <title>Review pages</title>
+	<script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+
+    // Shortform for $( document ).ready
+    // ensures js does not execute until html css are loaded up    
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+
+</head>
+<body>
+	<nav>
+        <ul class="menu">
+            <div class="logo">
+                <img src="LOGO123.png" alt="">
+            </div>
+            <li class="item"><a href="home2.html" >Home</a></li>
+            <li class="item"><a href="service2.html">Services</a></li>
+            <li class="item"><a href="extra.html">Shop</a></li>
+            <li class="item"><a href="review page.html" class="active">Reviews</a></li>
+            <li class="item"><a href="subscribe.html">Subscription</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+	<section>
+		<div class="heading"><b>Customer</b>Reviews </div>
+        
+		<div class="wrapper">
+			<div class="container">
+				<div class="profile">
+					<div class="imgBox">
+						<img src="face5.png">
+					</div>
+					<h2>Mary Ann</h2>
+				</div>
+				<p>" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam neque quisquam illo facilis suscipit maxime obcaecamollitia aperiam rerum. "</p>			
+			</div>
+
+			<div class="container">
+				<div class="profile">
+					<div class="imgBox">
+						<img src="face2.png">
+					</div>
+					<h2>Whitney Millers</h2>
+				</div>
+				<p>" Lorem quam alias voluptatem accusantium magnam eos harum ipsam modi, quisquam illo facilis suscipit maxime obcaecati laboriosam cum blanditiis ducimus ut consectetur id mollitia aperiam rerum."</p>
+				
+			</div>
+
+			<div class="container">
+				<div class="profile">
+					<div class="imgBox">
+						<img src="face3.png">
+					</div>
+					<h2>Anonymous user</h2>
+				</div>
+				<p>" Lorem Incidunt tempore vitae aliquam ,quisquam illo facilis suscipit maxime obcaecati laboriosam cum blanditiis ducimus ut consectetur id mollitia aperiam rerum. "</p>
+			</div>
+		</div>
+        
+        
+	</section>
+    <div class="heading2">
+        <h1>Add Your Reviews <a href="addreview.html">Here!</a></h1>
+    </div>
+
+    <hr><hr>
+    <div></div>
+    
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Mind & Body</h4>
+                <ul>
+                    <li><a href="home2.html"> Home</a></li>
+                    <li><a href="service2.html">Services</a></li>
+                    <li><a href="Shop2.html"> Shop</a></li>
+                    <li><a href="review page.html"> Review</a></li>
+                    <li><a href="subscribe.html"> Subscription</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Shipping</li>
+                    <li>Returns</li>
+                    <li>Order Status</li>
+                    <li>Payment Options</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Follow Us!</h4>
+                <div class="social-links"></div>
+                <ul>
+                    <li>Instagram: @Mind_&_Body</li>
+                    <li>Facebook: Mind_&_Body</li>
+                    <li>Email: mindandbody@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169;Mind & Body.All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+</html>

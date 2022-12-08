@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="Shop2.css" >
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="master.css">
+        <script src="Shop2.js" async></script>
+        <!-- ansync method tells it that it will load the background while the body of out element(the html) is loading-->
+        <!-- if the body of the element loads after the js loads, js will run first 
+            w/o a body, which means cnnt find any of the elements since they haven been generated yet -->
+            <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+            <script>
+        
+            // Shortform for $( document ).ready
+            // ensures js does not execute until html css are loaded up    
+            $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+            </script>
+    </head>
+    <body>
+        
+        <section class="container content-section">
+            <h2 class="section-header"> .~ Wellness Box ~.</h2>
+            <div class="shop-items">
+                <div class="card1">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Tiny Bandit</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="wellness kit 2.1.png">
+                        <div class="shop-item-details">
+                            
+                            <span class="shop-item-price">$24.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="shop-item">
+                        <span class="shop-item-title">LUX Crate</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="selfcare 45.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$30.99</span>
+                            <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Oxylent</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="WellnessKit-removebg-preview.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$19.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section class="container content-section">
+        <h2 class="section-header">.~ Candles ~.</h2>
+            <div class="shop-items">
+                <div class="card2">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Clarin's Sweet Neroli</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="candle 2.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$4.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="shop-item">
+                        <span class="shop-item-title"> Olive & Sage</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="candle 3.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$10.00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="shop-item">
+                        <span class="shop-item-title"> Cedarwood</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="candle 4.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$6.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">.~ Aromatherapy Oils ~.</h2>
+            <div class="shop-items">
+                
+                <div class="card3">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Mumianhua-Eucalyptus</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="aroma 3.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$10.00</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Eden's Garden-Turmeric</span>
+                        <br><p class="para">Lorem ipsum dolor sit amet consectetur</p>
+                        <img class="shop-item-image" src="aroma 4.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$6.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <hr>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total :</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            
+            <a href="Shop Form.html" class="button" class="btn btn-primary btn-purchase" type="button">PURCHASE</a>
+        </section><br>
+<hr><br>
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Mind & Body</h4>
+                    <ul>
+                        <li><a href="home2.html"> Home</a></li>
+                        <li><a href="service2.html">Services</a></li>
+                        <li><a href="Shop2.html"> Shop</a></li>
+                        <li><a href="review page.html"> Review</a></li>
+                        <li><a href="subscribe.html"> Subscription</a></li>
+                        <li><a href="contact.html"> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>Returns</li>
+                        <li>Order Status</li>
+                        <li>Payment Options</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow Us!</h4>
+                    <div class="social-links"></div>
+                    <ul>
+                        <li>Instagram: @Mind_&_Body</li>
+                        <li>Facebook: Mind_&_Body</li>
+                        <li>Email: mindandbody@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&#169;Mind & Body.All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

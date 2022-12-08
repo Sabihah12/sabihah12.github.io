@@ -1,0 +1,96 @@
+*{
+    font-family:'Verdana';
+    
+  }
+  body{
+    background-image: url(spa\ 5.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: cover;
+  }
+
+
+  #timings{
+    background-color:rgb(167, 206, 207);
+    color: white;
+    padding: 29px; 
+  }
+  
+  #timings{
+    color: rgb(6, 51, 51);
+    text-align: center;
+  }
+  
+  table{
+    align-items: center;
+    border: 3px solid rgba(18, 70, 70, 0.514);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify;
+    align-items:center;
+    display: inline;
+    margin-left: 150px;
+    
+  }
+  caption{
+    text-align: center;
+    font-size: 30px;
+    
+  }
+  td{
+    padding: 30px;
+    border: 3px solid rgba(18, 70, 70, 0.514);
+  }
+  
+  tr:nth-child(1){
+    background-color: rgba(255, 255, 255, 0.596);
+  }
+  tr:nth-child(2){
+    background-color: rgba(255, 255, 255, 0.452);
+  }
+  tr:nth-child(3){
+    background-color: rgb(255, 255, 255, 0.452);
+  }
+  tr:nth-child(4){
+    background-color: rgb(255, 255, 255, 0.452);
+  }
+  tr:nth-child(5){
+    background-color: rgba(255, 255, 255, 0.452);
+  }
+  tr:nth-child(6){
+    background-color: rgb(255, 255, 255, 0.452);
+  }
+  
+  tr:nth-child(7){
+    background-color: rgb(255, 255, 255, 0.452);
+  }
+  tr:nth-child(8){
+    background-color: rgba(255, 255, 255, 0.712);
+  }
+  .btn{
+    background-color: blue;
+  }
+
+  #heading{
+    text-align: center;
+    color: rgb(7, 48, 51);
+    font-size: 20px;   
+  }
+  
+  /* .right-col{
+    background-color: rgb(233, 233, 233);
+    width:1000px;
+    align-items: center;
+    margin-top: 300px;
+  } */
+
+  .footer p{
+    text-align: center;
+  }
+    
+  
+
+  
+  
+  

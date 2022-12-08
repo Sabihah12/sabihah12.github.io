@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addreview.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="master.css">
+    <title>Document</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+            <script>
+        
+            // Shortform for $( document ).ready
+            // ensures js does not execute until html css are loaded up    
+            $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+            </script>
+</head>
+<nav>
+    <ul class="menu">
+        <div class="logo">
+            <img src="LOGO123.png" alt="">
+        </div>
+        <li class="item"><a href="home2.html" >Home</a></li>
+        <li class="item"><a href="service2.html">Services</a></li>
+        <li class="item"><a href="extra.html">Shop</a></li>
+        <li class="item"><a href="review page.html" class="active">Reviews</a></li>
+        <li class="item"><a href="subscribe.html">Subscription</a></li>
+        <li class="item"><a href="contact.html">Contact Us</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+    </ul>
+</nav>
+<body>
+    <div class = content>
+        <div class = Para>
+            <h2> TELL US <span>YOUR EXPERIENCE</span> WITH OUR SERVICE AND LEAVE US <br><span> REVIEW AND A RATING!</span>    
+        </div>
+        <div class="stars">
+            <form action="">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+            <input type="reset" value="Reset">
+            </form>
+        </div>
+        <div class= "comment">
+        <form action="form processor 3.html" id="usrform">
+            Name: <input type="text" name="name">
+            <input type="reset" value="Reset">
+            <input type="submit">
+            </form>
+            <br>
+            <textarea placeholder="Enter your review... " rows="4" cols="50" name="review" form="usrform">
+            </textarea>
+            
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Mind & Body</h4>
+                <ul>
+                    <li><a href="home2.html"> Home</a></li>
+                    <li><a href="service2.html">Services</a></li>
+                    <li><a href="Shop2.html"> Shop</a></li>
+                    <li><a href="review page.html"> Review</a></li>
+                    <li><a href="subscribe.html"> Subscription</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Shipping</li>
+                    <li>Returns</li>
+                    <li>Order Status</li>
+                    <li>Payment Options</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us!</h4>
+                <div class="social-links"></div>
+                <ul>
+                    <li>Instagram: @Mind_&_Body</li>
+                    <li>Facebook: Mind_&_Body</li>
+                    <li>Email: mindandbody@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169;Mind & Body.All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+</html>

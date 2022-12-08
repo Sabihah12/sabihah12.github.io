@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="master.css">
+    <title>Contact Us</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+
+    // Shortform for $( document ).ready
+    // ensures js does not execute until html css are loaded up    
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body>
+        <nav>
+            <ul class="menu">
+                <div class="logo">
+                    <img src="LOGO123.png" alt="">
+                </div>
+                <li class="item"><a href="home2.html" >Home</a></li>
+                <li class="item"><a href="service2.html">Services</a></li>
+                <li class="item"><a href="extra.html">Shop</a></li>
+                <li class="item"><a href="review page.html">Reviews</a></li>
+                <li class="item"><a href="subscribe.html">Subscription</a></li>
+                <li class="item"><a href="contact.html" class="	active">Contact Us</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+          </nav>
+    </div>	
+    <div class="wrapper2">
+        <div class="title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-form">
+            <div class="address">
+                <p>Location: <br> 14 Scotts Road, Singapore 228313 <br><br>
+                Email: mindandbody@gmail.com <br><br>
+                FAX: (+65) 84372618 <br><br>
+                Instagram: Mind_&_Body</p>
+            </div>
+            <div class="input-fields">
+            <input type="text" class="input" placeholder="Name">
+            <input type="text" class="input" placeholder="Email Address">
+            <input type="text" class="input" placeholder="Phone">
+            <input type="text" class="input" placeholder="Subject">
+            </div>
+            <div class="msg">
+            <textarea placeholder="Message"></textarea>
+            <button><a href="form processor 2.html">Send</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.33604071546!2d103.8230816!3d1.2996032!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1992a5d4943d%3A0xfdf7e0afcc949193!2sFar%20East%20Plaza!5e0!3m2!1sen!2ssg!4v1626013538624!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p></p>
+    
+    </div>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Mind & Body</h4>
+                <ul>
+                    <li><a href="home2.html"> Home</a></li>
+                    <li><a href="service2.html">Services</a></li>
+                    <li><a href="Shop2.html"> Shop</a></li>
+                    <li><a href="review page.html"> Review</a></li>
+                    <li><a href="subscribe.html"> Subscription</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Shipping</li>
+                    <li>Returns</li>
+                    <li>Order Status</li>
+                    <li>Payment Options</li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Follow Us!</h4>
+                <div class="social-links"></div>
+                <ul>
+                    <li>Instagram: @Mind_&_Body</li>
+                    <li>Facebook: Mind_&_Body</li>
+                    <li>Email: mindandbody@gmail.com</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&#169;Mind & Body.All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,248 @@
+/*=====  GOOGLE FONTS  ======*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+/*=====  VARIABLES  ======*/
+:root {
+  --clr--primary-hue:37;
+  --clr--secondary-hue: 221;
+  --clr-primary: hsl(var(--clr--primary-hue), 98%, 53%);
+  --clr-secondary: hsl(var(--clr--secondary-hue), 51%, 25%);
+
+
+}
+.menu{
+  margin-top:-50px ;
+  padding: 5px 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+/*=====  CSS BASE  ======*/
+/* *,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+} */
+
+body {
+  margin: 30px 0 0 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--clr-text-light);
+}
+
+h1,
+h3,
+p {
+  margin: 10;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 25px;
+  
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+/*=====  COMPONENTS  ======*/
+.container {
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  max-width: 100%;
+}
+
+.container--lg {
+  max-width: 1400px;
+}
+
+.container--md {
+  max-width: 1024px;
+}
+
+.btn {
+  color:rgb(5, 0, 0);   /*black*/
+  padding: 0.75rem 1.125rem;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.btn--primary {
+  background-color: var(--clr-primary);
+  border: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn--primary:hover {
+  background-color:rgb(236, 231, 226);
+}
+
+.btn--secondary {
+  background-color: var(--clr-secondary);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn--secondary:hover {
+  background-color: hsl(var(--clr--secondary-hue), 51%, 15%);
+}
+
+.btn--lg {
+  font-size: 1.375rem;  
+}
+
+/*=====  HEADER  ======*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(201, 223, 233, 0.26);
+  z-index: 100;
+}
+
+.nav {
+  height: 80px; 
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.nav__logo {
+  text-align: center;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 2rem; 
+}
+
+.nav__menu {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav__menu .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__menu .nav__list__item a {
+  color: var(--clr-text-light);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav__menu .nav__list__item a:hover {
+  color: var(--clr-primary);
+}
+
+/* .nav__menu .nav__list__item:not(:last-child) {
+  margin-right: 1rem;
+} */
+
+@media screen and (min-width: 768px) {
+  .nav__menu .nav__list__item {
+    margin-right: 1rem;
+  }
+}
+
+.nav__menu .nav__list__btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu .nav__list__btn {
+    display: block;
+  }
+  .nav__menu .nav__list__btn:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+
+
+/*=====  HERO  ======*/
+.hero {
+  position: relative;
+  height: 619px;
+  background-image: url(black\ bg12.jpg);
+  background-size: cover;
+  
+  padding-top: 90px;
+  margin-top: calc(90px  * -1);
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 25px;
+  
+}
+
+.hero__content {
+  position: relative;
+  z-index: 4;
+}
+
+.hero__content__text {
+  text-align: center;
+
+}
+
+.hero__content__text h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero__content__text h3 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }

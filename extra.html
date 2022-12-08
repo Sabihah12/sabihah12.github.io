@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind & Body | Shop About</title>
+
+
+<!-- <link rel="stylesheet" href="Shop2.css" > -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="master.css">
+<link rel="stylesheet" href="header.css">
+<script>
+
+  // Shortform for $( document ).ready
+  // ensures js does not execute until html css are loaded up    
+  $(function() {
+  $(".toggle").on("click", function() {
+      if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+      } else {
+          $(".item").addClass("active");
+      }
+  });
+});
+  </script>
+
+<style>
+    * {
+        box-sizing: border-box;
+        
+    }
+    .text_wrapper{
+      background-image:url(pinkabstract2.jpg);
+      background-size: cover;
+      height: 450px;
+      
+    }
+    .text_wrapper h1{
+      color:black;
+      margin-left:170px;
+      font-family: Verdana, Tahoma, sans-serif;
+      overflow: hidden;
+      border-right: 0.15em solid rgb(87,56,56);
+      white-space: nowrap;
+      letter-spacing: 5px;
+      font-size: 45px;
+      animation:
+          typing 5.7s steps(20, end),
+          animated-cursor .9s step-end infinite;
+          animation-iteration-count: infinite;
+    }
+    @keyframes typing{
+      from{ width: 0 }
+      to{ width: 75% }
+    }
+
+    @keyframes animated-cursor{
+      from, to { border-color:transparent }
+      50% { border-color: rgb(87,56,56)}
+    }
+        
+    .text_wrapper p{
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-top: 40px;
+    }
+    .text_wrapper p a{
+      color: rgb(194, 105, 63);
+      font-size: 35px;
+      font-weight: 900;
+      font-style: italic;
+      font-family:'Courier New', Courier, monospace;
+    }
+    body {
+        font-family: Verdana, sans-serif;
+        margin:0;
+        
+        
+        
+    }    
+    .content{
+      margin-top: 50px;
+    }
+    .content h1{
+        font-size: 30;
+        color: rgb(196, 39, 86);
+        text-align: center;
+    }
+    .content p{
+        font-size: 20;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    .content a{
+        
+        font-size: 13;
+        color: rgb(155, 59, 80);
+        text-align: center;
+    } 
+    p{
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 550px;
+        color: black;
+    }
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .sponser::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    .sponser{
+        margin-left: 300px;
+        margin-bottom: 70px;
+    }
+
+    </style>
+</head>
+    <body>
+      <nav>
+        <ul class="menu">
+            <div class="logo">
+                <img src="LOGO123.png" alt="">
+            </div>
+            <li class="item"><a href="home2.html" >Home</a></li>
+            <li class="item"><a href="service2.html">Services</a></li>
+            <li class="item"><a href="extra.html">Shop</a></li>
+            <li class="item"><a href="review page.html">Reviews</a></li>
+            <li class="item"><a href="subscribe.html" class="active">Subscription</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+      </nav>
+      
+      <div class="text_wrapper">
+        <h1>Welcome To Mind & Body's!</h1><br>
+        <p>At Mind & Body's, customer satisfaction is our utmost priority. <br><br>
+            We have a range of products from blah blah blaahhhh <br><br>
+            Members have exclusive benefits from discounts, updates, tips and more!
+          <br><br> <a href="Shop2.html">Products -></a></p>
+      </div>
+      <div class="content">
+          <h1>SUBSCRIBE TO BE A MEMBER TODAY !</h1>
+          <p>And enjoy benefits at Mind & Body <br> <a href="subscribe.html" >Click Here To Subscribe</a></p>
+      </div>
+      <br><br><br><br>
+<hr>
+<p>Our Sponsers:</p>
+              <div class="sponser">
+                <div class="column">
+                  <img src="lush.png" alt="lush" style="width:25%"><br>
+                  <a href="https://sg.lush.com/">Lush</a>
+                </div>
+                <div class="column">
+                  <img src="bathandbodywork.png" alt="BBW" style="width:25%"> <br>
+                  <a href="https://www.bathandbodyworks.com.sg/">Bath and Body Work</a>
+                </div>
+                <div class="column">
+                  <img src="innisfree.png" alt="innisfree" style="width:35%"><br>
+                  <a href="https://www.innisfree.com/">Innisfree</a>
+                </div>
+              </div>
+            
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Mind & Body</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Products</li>
+                            <li>Subscription</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li>FAQ</li>
+                            <li>Shipping</li>
+                            <li>Returns</li>
+                            <li>Order Status</li>
+                            <li>Payment Options</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-col">
+                        <h4>Online Shopping</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">Bag</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="footer-col">
+                        <h4>Follow Us!</h4>
+                        <div class="social-links"></div>
+                      
+                          <ul>
+                            <li>Instagram: @Mind_&_Body</li>
+                            <li>Facebook: Mind_&_Body</li>
+                            <li>Email: mindandbody@gmail.com</li>
+                          </ul>
+                      
+                    </div>
+                    <div class="copyright">
+                        <p>&#169;Mind & Body.All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            
+            
+    </body>
+</html>

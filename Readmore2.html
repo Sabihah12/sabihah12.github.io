@@ -1,0 +1,284 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="master.css">
+    <title>Mind & Body | Steam Facial</title>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+
+    // Shortform for $( document ).ready
+    // ensures js does not execute until html css are loaded up    
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<style>
+body{
+    background-image: linear-gradient(rgb(204, 211, 243),rgb(211, 219, 255),rgb(215, 253, 205));
+}
+
+.para{
+    padding-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 5rem; 
+}
+
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+.btn1 {
+  background-color: rgba(255, 122, 122, 0.514);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 130px;
+  
+}
+.section-container
+{
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 50px;
+margin-top: 60px;
+margin-left: 30px;
+margin-right: 30px;
+}
+.section-container .columns
+{
+flex:0 0 auto;
+width:50%;
+}
+.section-container .columns.image
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+border: 10px double rgb(12, 83, 110);
+border-radius: 30px;
+}
+.section-container .columns.content .content-container
+{
+padding:40px 50px;
+}
+.section-container .columns.content .content-container h5
+{
+font-weight:700;
+font-size:25px;
+margin-bottom:20px;
+}
+.section-container .columns.content .content-container p
+{
+font-weight:400;
+font-size:16px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:justify;
+}
+@media screen and (max-width:767px)
+{
+.section-container
+{
+flex-flow:row wrap;
+}
+.section-container .columns.image{
+display:block;
+order:1;
+width:100%;
+height:250px;
+}
+.section-container .columns.content
+{
+display:block;
+order:2;
+width:100%;
+}
+.section-container .columns.content .content-container
+{
+padding:20px 35px;
+}
+.section-container .columns.content .content-container h5
+{
+margin-bottom:5px;
+}
+}
+</style>
+
+
+
+
+<body>
+    <nav>
+        <ul class="menu">
+            <div class="logo">
+                <img src="LOGO123.png" alt="">
+            </div>
+            <li class="item"><a href="home2.html" >Home</a></li>
+            <li class="item"><a href="service2.html" class="active">Services</a></li>
+            <li class="item"><a href="extra.html">Shop</a></li>
+            <li class="item"><a href="review page.html">Reviews</a></li>
+            <li class="item"><a href="subscribe.html">Subscription</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <div class="para">
+        <h1>Steam Facials</h1>
+    </div>
+    <div class="section-container">
+        <div class="columns image" style="background-image:url('bg12.jpg')">
+           &nbsp;
+        </div>
+        <div class="columns content">
+           <div class="content-container">
+              <h5>What Is A Steam Facial?</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo quae omnis provident eveniet ullam!</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, distinctio eum! Odit itaque assumenda, reiciendis pariatur provident quidem, placeat fugit, eius facilis libero ratione adipisci? Voluptatum illo pariatur reiciendis repellat!</p>
+           </div>
+        </div>
+     </div>
+     <div class="section-container">
+        <div class="columns content">
+           <div class="content-container">
+              <h5>What are the benefits of Steam Facials?</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci perferendis temporibus ab, placeat illo aliquid?</p>
+              
+                  <ul>
+                      <li> >Lorem ipsum dolor sit.</li>
+                      <li>>Lorem ipsum dolor sit amet consectetur.</li>
+                      <li>>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                      <li>>Lorem ipsum dolor sit amet consectetur.</li>
+                  </ul><br>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quasi suscipit laboriosam quisquam sit.</p>
+              
+           </div>
+        </div>
+        <div class="columns image" style="background-image:url('abstract19.jpg')">
+           &nbsp;
+        </div>
+     </div>
+     <div class="btn">
+        <div class="btn1">
+           <p>
+               <a href="Readmore1.html">Mud Spa  |</a>
+               <a href="Readmore3.html">Regular Spa  |</a>
+               <a href="Readmore4.html">Aroma Therapy</a>
+           </p>
+       </div>
+    </div>
+     
+    <table>
+        <tr>
+            <th>Days</th>
+            <th>Timings</th>
+            <th>Price (per session)</th>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>2:00pm-5:00pm <br> 1hr/session</td>
+            <td>$45</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>2:00pm-5:00pm <br> 1hr/session</td>
+            <td>$45</td>
+        </tr>
+        <tr>
+            <td>Weekends</td>
+            <td>9:00am-1:00pm <br> 1hr/session</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <!-- <button><a href="service2.html" class="btn">Back</a></button> -->
+    
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Mind & Body</h4>
+                <ul>
+                    <li><a href="home2.html"> Home</a></li>
+                    <li><a href="service2.html">Services</a></li>
+                    <li><a href="Shop2.html"> Shop</a></li>
+                    <li><a href="review page.html"> Review</a></li>
+                    <li><a href="subscribe.html"> Subscription</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Shipping</li>
+                    <li>Returns</li>
+                    <li>Order Status</li>
+                    <li>Payment Options</li>
+                </ul>
+            </div>
+            <!-- <div class="footer-col">
+                <h4>Online Shopping</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">Bag</a></li>
+                </ul>
+            </div> -->
+            <div class="footer-col">
+                <h4>Follow Us!</h4>
+                <div class="social-links"></div>
+                <ul>
+                    <li>Instagram: @Mind_&_Body</li>
+                    <li>Facebook: Mind_&_Body</li>
+                    <li>Email: mindandbody@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169;Mind & Body.All Rights Reserved</p>
+        </div>
+    </div>
+  </footer>
+</html>
